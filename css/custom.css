@@ -1,0 +1,123 @@
+html, body, .main {
+    height: 100%;
+    margin: 0;
+    background-color: #17182f;
+}
+
+h1 {
+    font-size: 320%;
+    font-family: 'Raleway', sans-serif;
+}
+
+canvas {
+    display: block;
+}
+
+#fade-title {
+    color: wheat;
+    margin-bottom: 1rem;
+    padding-left: 0px;
+}
+
+#main {
+    height: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container {
+    padding: 0;
+}
+
+#main-content {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 12%;
+    height: 100%;
+    float: left;
+}
+
+.description-content {
+    font-family: 'Roboto', sans-serif;
+    color: #b3b3b3;
+}
+
+.basic-info-content {
+    font-size: 120%;
+}
+
+.typer-content {
+    font-size: 150%;
+    border-right: .1em solid rgb(244, 78, 79);
+    animation: blink-cursor .5s step-end infinite;
+}
+
+@keyframes blink-cursor {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(244, 78, 79)
+        ; }
+}
+
+.gap {
+    margin-bottom: 2rem;
+}
+
+.links {
+    color: rgb(244, 78, 79);
+    border-style: dotted;
+    border-color: #b3b3b3;
+    padding: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: fit-content;
+    border-radius: 8px;
+}
+
+.links-text {
+    letter-spacing: 1px;
+    font-size: 95%;
+}
+
+a:link {
+    color: rgb(244, 78, 79);
+    text-decoration: none; 
+}
+a:visited {
+    color: rgb(244, 78, 79);
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+
+    text-decoration: none;
+}
+a:active {
+    color: rgb(244, 78, 79);
+    text-decoration: none;
+}
+
+/* Fading animation on load */
+#fade-title {
+    animation: fadeIn 1s;
+}
+
+#fade-description {
+    animation: fadeIn 1.25s;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-height: 430px) {
+    .main-content {
+        height: 8%;
+    }
+}
